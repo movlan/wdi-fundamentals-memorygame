@@ -34,9 +34,9 @@ function createBoard() {
 
 function checkForMatch() {
 		if (cardsInPlay[0] === cardsInPlay[1]) {
-			alert("You found a match!");
+			setTimeout(function(){ alert("You found a match!"); }, 300);
 		} else {
-			alert("Sorry try again.");
+			setTimeout(function(){ alert("Sorry try again."); }, 300);
 		}
 }
 ;
@@ -50,6 +50,7 @@ function flipCard() {
 	console.log(cards[cardId].suit);
 	if (cardsInPlay.length === 2) {
 		checkForMatch();
+
 	}
 };
 
